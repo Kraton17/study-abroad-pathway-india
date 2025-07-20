@@ -10,6 +10,7 @@ import CountriesPage from "./pages/CountriesPage";
 import LoansPage from "./pages/LoansPage";
 import ConsultanciesPage from "./pages/ConsultanciesPage";
 import PackingGuidePage from "./pages/PackingGuidePage";
+import UniversityDetail from "./pages/UniversityDetail"; // Import the new component
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/consultancies" element={<ConsultanciesPage />} />
           <Route path="/packing-guide" element={<PackingGuidePage />} />
           <Route path="/bank/:bankId" element={<BankDetail />} />
+          <Route path="/university/:id" element={<UniversityDetail />} /> {/* Add the new route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
