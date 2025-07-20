@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 213 31% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 213 31% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 31% 12%;
+
+    --primary: 213 94% 15%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 213 31% 12%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 23 83% 55%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 213 94% 15%;
+
+    /* Custom study abroad theme colors */
+    --trust-blue: 213 94% 15%;
+    --education-orange: 23 83% 55%;
+    --success-green: 142 71% 45%;
+    --warning-amber: 38 92% 50%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Your dark mode colors here */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* Add this new rule for button hover effects */
+  .btn-hover-effect {
+    @apply transition-transform duration-200 ease-in-out;
+  }
+  .btn-hover-effect:hover {
+    @apply scale-105 brightness-110;
+  }
+}
