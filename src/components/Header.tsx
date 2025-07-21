@@ -22,7 +22,7 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-all duration-300 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground hover:scale-[1.02] hover:shadow-md",
             className
           )}
           {...props}
@@ -51,16 +51,18 @@ const Header = () => {
           <NavigationMenuList>
              <NavigationMenuItem>
               <Link to="/">
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <NavigationMenuLink className={`${navigationMenuTriggerStyle()} btn-hover-effect`}>
                   Home
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
 
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>Destinations</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <NavigationMenuItem className="group">
+              <NavigationMenuTrigger className="btn-hover-effect nav-trigger">
+                Destinations
+              </NavigationMenuTrigger>
+              <NavigationMenuContent className="nav-content opacity-0 invisible translate-y-2 transition-all duration-200 ease-in-out">
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-background/95 backdrop-blur-sm shadow-lg rounded-lg border">
                     <ListItem href="/countries" title="Country Guides">
                         Explore top study destinations like the USA, UK, Canada, and more.
                     </ListItem>
@@ -68,10 +70,12 @@ const Header = () => {
               </NavigationMenuContent>
             </NavigationMenuItem>
 
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>Preparation</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <NavigationMenuItem className="group">
+              <NavigationMenuTrigger className="btn-hover-effect nav-trigger">
+                Preparation
+              </NavigationMenuTrigger>
+              <NavigationMenuContent className="nav-content opacity-0 invisible translate-y-2 transition-all duration-200 ease-in-out">
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-background/95 backdrop-blur-sm shadow-lg rounded-lg border">
                   <ListItem href="/loans" title="Education Loans">
                     Compare the best loan options from leading banks and NBFCs.
                   </ListItem>
@@ -80,7 +84,7 @@ const Header = () => {
                   </ListItem>
                    <ListItem href="/packing-guide" title="Packing Guide">
                     A complete checklist for your study abroad journey.
-                  </ListItem>
+                   </ListItem>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>

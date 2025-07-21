@@ -57,11 +57,30 @@
 }
 
 @layer components {
-  /* Add this new rule for button hover effects */
+  /* Enhanced button hover effects */
   .btn-hover-effect {
-    @apply transition-transform duration-200 ease-in-out;
+    @apply transition-all duration-300 ease-in-out;
   }
   .btn-hover-effect:hover {
-    @apply scale-105 brightness-110;
+    @apply scale-105 brightness-110 shadow-lg;
+  }
+  
+  /* Interactive card hover effects */
+  .card-hover {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  .card-hover:hover {
+    @apply scale-[1.02] shadow-xl;
+  }
+  
+  /* Glow effect for primary buttons */
+  .btn-glow:hover {
+    @apply shadow-[0_0_20px_rgba(59,130,246,0.4)];
+  }
+  
+  /* Navigation dropdown hover trigger */
+  .nav-trigger:hover + .nav-content,
+  .nav-content:hover {
+    @apply opacity-100 visible translate-y-0;
   }
 }

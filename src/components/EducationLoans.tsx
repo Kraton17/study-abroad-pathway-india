@@ -40,7 +40,8 @@ const EducationLoans = () => {
             <h3 className="text-2xl font-bold text-foreground mb-8 text-center">{category}</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {providers.map((provider) => (
-                <Card key={provider.id} className="h-full border-border shadow-soft hover:shadow-medium transition-all duration-300 flex flex-col">
+                <Card key={provider.id} className="h-full border-border shadow-soft hover:shadow-medium transition-all duration-300 flex flex-col card-hover animate-slide-up"
+                  style={{ animationDelay: `${providers.indexOf(provider) * 0.1}s` }}>
                   <CardHeader>
                     <div className="flex items-center justify-between mb-2">
                       <Badge variant={getBadgeVariant(provider.type)}>
