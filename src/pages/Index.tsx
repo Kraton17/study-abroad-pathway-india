@@ -1,6 +1,9 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
+import FeaturedDestinations from "@/components/FeaturedDestinations";
+import StatsSection from "@/components/StatsSection";
+import WhyChooseUs from "@/components/WhyChooseUs";
 
 const Index = () => {
   return (
@@ -8,7 +11,9 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        {/* You can add featured sections from other pages here later if you wish */}
+        <FeaturedDestinations />
+        <StatsSection />
+        <WhyChooseUs />
       </main>
       <Footer />
     </div>

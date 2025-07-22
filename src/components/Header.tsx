@@ -57,25 +57,34 @@ const Header = () => {
               </Link>
             </NavigationMenuItem>
 
-            <NavigationMenuItem className="group">
-              <NavigationMenuTrigger className="btn-hover-effect nav-trigger">
+            <NavigationMenuItem className="group nav-group">
+              <NavigationMenuTrigger className="btn-hover-effect">
                 Destinations
               </NavigationMenuTrigger>
-              <NavigationMenuContent className="nav-content opacity-0 invisible translate-y-2 transition-all duration-200 ease-in-out">
-                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-background/95 backdrop-blur-sm shadow-lg rounded-lg border">
+              <NavigationMenuContent className="nav-content">
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-background/95 backdrop-blur-sm shadow-lg rounded-lg border border-border/50">
                     <ListItem href="/countries" title="Country Guides">
                         Explore top study destinations like the USA, UK, Canada, and more.
+                    </ListItem>
+                    <ListItem href="/countries" title="University Rankings">
+                        Compare QS and THE rankings for top universities worldwide.
+                    </ListItem>
+                    <ListItem href="/countries" title="Course Finder">
+                        Find the perfect course that matches your interests.
+                    </ListItem>
+                    <ListItem href="/countries" title="Scholarship Opportunities">
+                        Discover available scholarships and funding options.
                     </ListItem>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
 
-            <NavigationMenuItem className="group">
-              <NavigationMenuTrigger className="btn-hover-effect nav-trigger">
+            <NavigationMenuItem className="group nav-group">
+              <NavigationMenuTrigger className="btn-hover-effect">
                 Preparation
               </NavigationMenuTrigger>
-              <NavigationMenuContent className="nav-content opacity-0 invisible translate-y-2 transition-all duration-200 ease-in-out">
-                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-background/95 backdrop-blur-sm shadow-lg rounded-lg border">
+              <NavigationMenuContent className="nav-content">
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-background/95 backdrop-blur-sm shadow-lg rounded-lg border border-border/50">
                   <ListItem href="/loans" title="Education Loans">
                     Compare the best loan options from leading banks and NBFCs.
                   </ListItem>
@@ -84,6 +93,15 @@ const Header = () => {
                   </ListItem>
                    <ListItem href="/packing-guide" title="Packing Guide">
                     A complete checklist for your study abroad journey.
+                   </ListItem>
+                   <ListItem href="/loans" title="Document Checklist">
+                    Essential documents needed for your applications.
+                   </ListItem>
+                   <ListItem href="/consultancies" title="Visa Guidance">
+                    Step-by-step visa application process.
+                   </ListItem>
+                   <ListItem href="/packing-guide" title="Pre-Departure Tips">
+                    Everything you need to know before you travel.
                    </ListItem>
                 </ul>
               </NavigationMenuContent>
