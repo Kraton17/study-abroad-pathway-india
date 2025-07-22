@@ -9,7 +9,7 @@ const destinations = [
     id: "usa",
     name: "United States",
     flag: "🇺🇸",
-    image: "photo-1469474968028-56623f02e42b",
+    image: "usa.jpg",
     topUniversities: ["MIT", "Stanford", "Carnegie Mellon"],
     description: "Home to world's top universities and innovation hubs",
     students: "1M+",
@@ -19,7 +19,7 @@ const destinations = [
     id: "uk",
     name: "United Kingdom", 
     flag: "🇬🇧",
-    image: "photo-1493397212122-2b85dda8106b",
+    image: "uk.jpg",
     topUniversities: ["Oxford", "Cambridge", "Southampton"],
     description: "Rich academic heritage and cutting-edge research",
     students: "500K+",
@@ -29,7 +29,7 @@ const destinations = [
     id: "canada",
     name: "Canada",
     flag: "🇨🇦", 
-    image: "photo-1500375592092-40eb2168fd21",
+    image: "canada.jpeg",
     topUniversities: ["Toronto", "UBC", "Waterloo"],
     description: "Quality education with friendly immigration policies",
     students: "350K+",
@@ -39,7 +39,7 @@ const destinations = [
     id: "australia",
     name: "Australia",
     flag: "🇦🇺",
-    image: "photo-1485833077593-4278b8350c16", 
+    image: "aus.jpg", 
     topUniversities: ["Melbourne", "Sydney", "ANU"],
     description: "World-class education in a vibrant multicultural environment",
     students: "300K+",
@@ -76,8 +76,8 @@ const FeaturedDestinations = () => {
                 <div 
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                   style={{
-                    backgroundImage: `url(https://images.unsplash.com/${destination.image}?w=400&h=300&fit=crop)`
-                  }}
+                    backgroundImage: `url(/${destination.image})`
+                  }} 
                 />
                 
                 {/* Gradient Overlay */}

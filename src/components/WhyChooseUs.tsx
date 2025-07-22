@@ -107,7 +107,7 @@ const WhyChooseUs = () => {
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" className="btn-hover-effect border-white text-white hover:bg-white hover:text-primary" asChild>
+            <Button size="lg" variant="secondary" className="btn-hover-effect" asChild>
               <Link to="/loans">
                 Compare Loans
                 <ArrowRight className="w-5 h-5 ml-2" />

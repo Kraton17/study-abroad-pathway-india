@@ -40,11 +40,11 @@ ListItem.displayName = "ListItem";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 bg-background/95 backdrop-blur-sm border-b border-border z-50">
-      <div className="container mx-auto px-4 py-2 flex items-center justify-between">
+    <header className="sticky top-0 h-20 bg-primary backdrop-blur-sm border-b border-border z-50">
+      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
-          <GraduationCap className="h-8 w-8 text-primary" />
-          <span className="text-xl font-bold text-primary">VisionAbroad</span>
+          <GraduationCap className="h-8 w-8 text-accent" />
+          <span className="text-xl font-bold text-primary-foreground">VisionAbroad</span>
         </Link>
         
         <NavigationMenu>
