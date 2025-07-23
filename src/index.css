@@ -42,7 +42,39 @@
   }
 
   .dark {
-    /* Your dark mode colors here */
+    --background: 213 31% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 213 31% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 213 31% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 213 94% 25%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 213 31% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 213 31% 15%;
+    --muted-foreground: 215 16% 65%;
+
+    --accent: 23 83% 65%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 213 31% 20%;
+    --input: 213 31% 20%;
+    --ring: 213 94% 25%;
+
+    /* Custom study abroad theme colors - dark mode */
+    --trust-blue: 213 94% 25%;
+    --education-orange: 23 83% 65%;
+    --success-green: 142 71% 55%;
+    --warning-amber: 38 92% 60%;
   }
 }
 
